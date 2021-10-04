@@ -1,0 +1,335 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="relative flex items-center justify-center h-96 mb-12 overflow-hidden">
+        <div
+          class="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl"
+        >
+      
+            <a href="/home" class="mr-5 hover:text-gray-900">Home</a>
+            <a href="/Blogs" class="mr-5 hover:text-gray-900">Blogs</a>
+            <a href="/Contact" class="mr-5 hover:text-gray-900">Contact</a>
+            <a href="/offset" class="mr-5 hover:text-gray-900">Offset</a>
+            <a href="/forbrands" class="mr-5 hover:text-gray-900">For Brands</a>
+            <a href="/Signup" class="mr-5 hover:text-gray-900"><button>Sign Up</button></a>
+           
+            
+          
+        </div>
+        <video
+          autoplay
+          loop
+          muted
+          class="absolute z-10 w-auto min-w-full min-h-full max-w-none "
+        >
+          <source
+            src="{% static 'vd/1.mov' %}"
+            type="video/mp4"
+          />
+        
+        </video>
+      </header>
+      <section>
+          <div>
+              <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap w-full mb-20">
+                    <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+                      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-green-900">THE WORLD’S LARGEST AND MOST TRUSTED SOURCE OF FAIR-TRADE VERIFIED RECYCLED PLASTIC</h1>
+                      <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+                    </div>
+                  </div>
+                  <div class="flex flex-wrap -m-4">
+                    <div class="xl:w-2/4 md:w-1/2 p-4">
+                      <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-50 rounded w-full object-cover object-center mb-6" src="{% static 'images/2.jpg' %}" alt="content">
+                        
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">OUR PLANET</h2>
+                        <p class="leading-relaxed text-base">33 double-decker busloads of plastic waste are burned or dumped in developing countries every 30 seconds*</p>
+                      </div>
+                    </div>
+                    <div class="xl:w-2/4 md:w-1/2 p-4">
+                      <div class="bg-gray-100 p-6 rounded-lg">
+                        <img class="h-50 rounded w-full object-cover object-center mb-6" src="{% static 'images/1.jpg' %}"alt="content">
+                        
+                        <h2 class="text-lg text-gray-900 font-medium title-font mb-4">OUR PEOPLE</h2>
+                        <p class="leading-relaxed text-base">More than 10 million informal waste collectors across the world are marginalized and live in poverty.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto flex flex-col">
+                  <div class="lg:w-4/6 mx-auto">
+                    <div class="rounded-lg h-64 overflow-hidden">
+                      <img alt="content" class="object-cover object-center h-96 w-full" src="{% static 'images/3.jpg' %}">
+                    </div>
+                    <div class="flex flex-col sm:flex-row mt-10">
+                      <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                        <p class="leading-relaxed text-lg mb-4">A HUMANITARIAN SOLUTION FOR AN ENVIRONMENTAL CHALLENGE.</p>
+                        <p class="leading-relaxed text-lg mb-4">WE USE PLASTIC WASTE AS A RESOURCE TO CREATE BETTER LIVELIHOODS AND A CLEANER PLANET.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              <section class="text-gray-600 body-font overflow-hidden">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                    <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="{% static 'images/4.jpg' %}">
+                    <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                      <h1 class="sm:text-3xl text-2xl font-medium title-font">Responsible & Fair Supply Chains</h1>
+                      <p>Our ethical sourcing platform connects informal waste collectors to global markets, ensuring our brand partners a consistent supply of high quality recycled plastic through our responsible and transparent supply chains.</p>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                        <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font">Offset & EPR for Brands</h1>
+                            <p>For brands that aren’t ready to source recycled plastic we provide offset and EPR services - helping them contribute to the recovery and recycling certified ocean-bound plastic and giving directly to those at the base of the supply chain..</p>
+                            
+                          </div>
+                      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="{% static 'images/images.jpg' %}">
+                     
+                    </div>
+                  </div>
+              </section>
+
+              <section>
+                <h1 class="text-center text-green-900 sm:text-3xl text-2xl font-medium title-font">WANT TO JOIN THE MOVEMENT?</h1>
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                        
+                      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="{% static 'images/5.jpg' %}">
+                      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font">Plastic Offset</h1>
+                        <p>Did you know that the average person in North America or Western Europe uses 100 kgs of plastic per year? 
+
+                            Well today, by directly contributing to the recovery of ocean-bound plastic you can make a dent in the amount of plastic that you use and also create a better future for the waste collectors that are collecting it. You can even gift a plastic offset to your friends and family!.</p>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <h1 class="text-center text-green-900 sm:text-3xl text-2xl font-medium title-font">COMING SOON!</h1>
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="lg:w-4/5 mx-auto flex flex-wrap">
+                      <div class="lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font">THE SHOP</h1>
+                        <p>We are constantly looking to innovate and create solutions for the environmental and social issues that are present today. 
+
+                            We’re excited to add to our line-up of disruptive solutions, and we can’t wait for you to see it!</p>
+                        
+                      </div>
+                      <img alt="ecommerce" class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" src="{% static 'images/6.jpg' %}">
+                    </div>
+                  </div>
+              </section>
+              <!--  -->
+              <section class="text-gray-600 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-col text-center w-full mb-20">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-green-900">Our Team</h1>
+                    <p class="lg:w-2/3 mx-auto leading-relaxed text-base">
+                        “Plastic can be a force for good. By partnering with Plastics For Change, we can set fair conditions and prices, and give access to global markets.”
+                        — Kate Levine | Global Brand Director, The Body Shop .</p>
+                  </div>
+                  <div class="flex flex-wrap -m-4">
+                    <div class="lg:w-1/2 sm:w-1/2 p-4">
+                      <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'images/7.jpg' %}">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                          
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Twisha Saha</h1>
+                          <p class="leading-relaxed">University Of asia pacific.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lg:w-1/2 sm:w-1/2 p-4">
+                      <div class="flex relative">
+                        <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{% static 'images/8.jpg' %}">
+                        <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                          
+                          <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Khaira Binte Islam Mim</h1>
+                          <p class="leading-relaxed">University Of asia pacific.</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                   
+                   
+                  </div>
+                </div>
+              </section>
+
+            <!--  ---------------------------------------->
+
+            <footer class="text-gray-400 bg-gray-900 body-font">
+                <div class="container px-5 py-24 mx-auto">
+                  <div class="flex flex-wrap md:text-left text-center -mb-10 -mx-4">
+                    <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                          <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                      </nav>
+                    </div>
+                    <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                          <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                      </nav>
+                    </div>
+                    <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                          <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                      </nav>
+                    </div>
+                    <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                          <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                      </nav>
+                    </div>
+                    <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                          <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                      </nav>
+                    </div>
+                    <div class="lg:w-1/6 md:w-1/2 w-full px-4">
+                      <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">CATEGORIES</h2>
+                      <nav class="list-none mb-10">
+                        <li>
+                          <a class="text-gray-400 hover:text-white">First Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Second Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Third Link</a>
+                        </li>
+                        <li>
+                          <a class="text-gray-400 hover:text-white">Fourth Link</a>
+                        </li>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+                <div class="border-t border-gray-800">
+                  <div class="container px-5 py-8 flex flex-wrap mx-auto items-center">
+                    <div class="flex md:flex-nowrap flex-wrap justify-center items-end md:justify-start">
+                      <div class="relative sm:w-64 w-40 sm:mr-4 mr-2">
+                        <label for="footer-field" class="leading-7 text-sm text-gray-400">Placeholder</label>
+                        <input type="text" id="footer-field" name="footer-field" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:ring-2 focus:ring-yellow-900 focus:bg-transparent focus:border-yellow-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      </div>
+                      <button class="inline-flex text-white bg-yellow-500 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-600 rounded">Button</button>
+                      <p class="text-gray-500 text-sm md:ml-6 md:mt-0 mt-2 text-center sm:text-left">Bitters chicharrones fanny pack
+                        <br class="lg:block hidden">waistcoat green juice
+                      </p>
+                    </div>
+                    <span class="inline-flex lg:ml-auto lg:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto">
+                      <a class="text-gray-400">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-3 text-gray-400">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-3 text-gray-400">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                          <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                          <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                      </a>
+                      <a class="ml-3 text-gray-400">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                          <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                          <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div class="bg-gray-800 bg-opacity-75">
+                  <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                    <p class="text-gray-400 text-sm text-center sm:text-left">© —
+                      <a href="https://twitter.com/knyttneve" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@</a>
+                    </p>
+                    <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-400 text-sm">Enamel pin tousled raclette tacos irony</span>
+                  </div>
+                </div>
+              </footer>
+              
+</body>
+
+</html>
